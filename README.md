@@ -13,15 +13,23 @@ Enable SSH from the WebGUI by going to Host > Actions > Services > Enable Secure
 
 Windows: 
 Use desired `ssh` client such as **PuTTY** and enter in the address field:
-    root@IP_ADDRESS
+```
+root@IP_ADDRESS
+```
 
 Linux/macOS:
-    ssh root@IP_ADDRESS
+```
+ssh root@IP_ADDRESS
+```
 
 Once logged in:
-    wget https://raw.githubusercontent.com/tbender4/Easy-ESXi-Host-Updater/master/compare-profiles.sh
-    chmod +x compare-profiles.sh
+```
+wget https://raw.githubusercontent.com/tbender4/Easy-ESXi-Host-Updater/master/compare-profiles.sh
+chmod +x compare-profiles.sh
+```
 
 ## Usage
 Run script in the current working directory:
-    ./compare-profiles.sh
+```
+./compare-profiles.sh
+```
