@@ -36,6 +36,7 @@ Run script in the current working directory:
 
 Example output:
 ```
+$ ./compare-profiles.sh
 ESXi-6.7.0-8169922-standard
 Latest version of ESXi:
 ESXi-6.7.0-8169922-standard
