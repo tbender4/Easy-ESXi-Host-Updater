@@ -7,7 +7,7 @@ esxcli software profile get | sed '1!d' \
 
 echo "Latest version of ESXi: "
 esxcli software sources profile list \
-	--depot=https://hostupdate.vmware.com/software/VUM/PRODUCTION/main/vmw-depot-index.xml /
+	--depot=https://hostupdate.vmware.com/software/VUM/PRODUCTION/main/vmw-depot-index.xml \
 	| sort -k4 \
 	| tail -2 | head -1 \
 	| sed \
