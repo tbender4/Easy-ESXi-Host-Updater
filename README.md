@@ -33,3 +33,10 @@ Run script in the current working directory:
 ```
 ./compare-profiles.sh
 ```
+
+Example output:
+```
+ESXi-6.7.0-8169922-standard
+Latest version of ESXi:
+ESXi-6.7.0-8169922-standard
+```
