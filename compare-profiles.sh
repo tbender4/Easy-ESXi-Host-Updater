@@ -1,6 +1,5 @@
 #!/bin/sh
 
-
 echo "Current version: "
 esxcli software profile get | sed '1!d' \
 	| cut -d' ' -f2
