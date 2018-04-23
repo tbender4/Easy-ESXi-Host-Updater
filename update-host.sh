@@ -20,8 +20,8 @@ then
 else
 	read -p "Update host from ${current} to ${latest}? (y/N): " confirm
 	case "$confirm" in
-		"") exit 1;;
 		[yY] | [yY][eE][Ss]) update=true;;
+		*) exit 1;;
 	esac
 fi
 
