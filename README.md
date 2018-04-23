@@ -3,42 +3,43 @@ Scripts to easily update an ESXi host from the shell.
 
 ## Purpose
 
-This is a couple of scripts that can update an ESXi host to the latest version by utilizing VMWare ESXi's production depot and `esxcli`.
+This is a few scripts to ease the process of updating an ESXi host to the latest version through the shell. It will pull official profiles by utilizing VMWare ESXi's production depot and `esxcli`.
 
-It will compare the latest profile to the one currently installed. Soon it'll be updated to actually apply the update.
+`update-host.sh` will compare the latest profile to the one currently installed. If a newer version is available, you will be prompted if you would like to update.
 
 ## Installation
 
 Enable SSH from the WebGUI by going to Host > Actions > Services > Enable Secure Shell (SSH). Log into the shell:
 
-Windows: 
-Use desired `ssh` client such as **PuTTY** and enter in the address field:
+For Windows users: Use desired `ssh` client such as **PuTTY** and enter in the address field:
 ```
 root@IP_ADDRESS
 ```
 
-Linux/macOS:
+Linux/macOS: Enter in terminal:
 ```
 ssh root@IP_ADDRESS
 ```
 
 Once logged in:
 ```
-wget https://raw.githubusercontent.com/tbender4/Easy-ESXi-Host-Updater/master/compare-profiles.sh
-chmod +x compare-profiles.sh
+wget https://raw.githubusercontent.com/tbender4/Easy-ESXi-Host-Updater/master/update-host.sh
+chmod +x update-host.sh
 ```
 
 ## Usage
-Run script in the current working directory:
+Run script in the current working directory of the script:
 ```
-./compare-profiles.sh
+./update-host.sh
 ```
 
 Example output:
 ```
-$ ./compare-profiles.sh
+$ ./update-host.sh
 Current version:
 ESXi-6.7.0-8169922-standard
 Latest version of ESXi:
 ESXi-6.7.0-8169922-standard
+Up to date
 ```
+
